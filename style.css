@@ -1,3 +1,49 @@
-p{
-    color:rebeccapurple;
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin:0px;
+    /* padding:0px; */
+}
+h2{
+    background-color:aqua;
+    border-radius:4px;
+    text-align:center;
+    font-size:xx-large;
+    color:rgb(0, 106, 255)
+}
+
+form{
+    background-color:aliceblue;
+    width:600px;
+    margin-left:500px;
+    margin-top: 100px;
+    padding: 50px 20px 0px 30px;
+    height: 500px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly; 
+}
+/* #name-field{
+    padding-top:20px;
+}
+#number-field{
+    padding-top:20px;
+}
+#email-field{
+    padding-top:20px;
+}
+#gender-field{
+    padding-top:20px;
+    background: #eef9ff;
+}
+#dob-field{
+    padding-top:20px;
+}
+#branch-field{
+    padding-top:20px;
+} */
+#submit-field {
+    margin-bottom: 15px;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
 }

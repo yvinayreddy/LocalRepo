@@ -4,9 +4,58 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Student Form</title>
 </head>
 <body>
-    <p>vinay is doing this project</p>
+    <h2>Student Details</h2>
+    <form>
+        <!-- asking basic details -->
+        <div id="name-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+
+        <div id="number-field">
+            <label for="number">Mobile Number</label>
+            <input type="tel" id="number" name="number" placeholder="Mobile number" required>
+        </div>
+
+        <div id="email-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="E-Mail" required>
+        </div>
+
+        <!-- Adding gender details in form -->
+        <div id="gender-field">
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="other"> Other
+        </div>
+
+        <!-- date of birth -->
+        <div id="dob-field">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob">
+        </div>
+
+        <!-- selecting branch -->
+        <div id="branch-field">
+            <label for="branch">Branch</label>
+            <select name="branch" id="branch">
+                <option value="none">-- Select your branch --</option>
+                <option value="CSE">Computer Science</option>
+                <option value="ECE">Electronics</option>
+                <option value="EEE">Electrical</option>
+                <option value="MEC">Mechanical</option>
+                <option value="CIV">Civil</option>
+            </select>
+        </div>
+
+        <!-- submit button -->
+        <div id="submit-field">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
 </body>
 </html>
