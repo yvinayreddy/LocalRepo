@@ -1,10 +1,7 @@
 *{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin:0px;
-    /* padding:0px; */
-}
-body{
-    background-color:#00ff3c10;
+    padding:0px;
 }
 h2{
     background-color:aqua;
@@ -21,29 +18,100 @@ form{
     width:400px;
     height: 700px;
 /* margin and padding */
-    margin-left:550px;
-    margin-top: 100px;
-    padding: 80px 60px 0px 50px;
- /* border and shadow */
-    border: 2px solid #00ff3c;   /* 2px thick, solid style ,border color*/
+    margin: 100px auto; /* centers form horizontally */
+    padding: 80px 50px 0px 50px;
+/* border and shadow */
+    border: 2px solid #7bf698;   /* 2px thick, solid style ,border color*/
     border-radius: 8px;          /* rounded corners */
-    box-shadow:  5px 4px 14px rgb(30, 255, 0); /*(shadow direction) shadow which side more ,biur radius,spread radius ,color */
+    box-shadow: 5px 4px 24px rgba(0, 0, 0, 0.3); /* base shadow */
 /* arrangement */
     display:flex;
     flex-direction:column;
     justify-content:space-evenly; 
+/* transform */
+    transition: transform 0.5s ease, box-shadow 0.4s ease; /* smooth zoom */
 }
+form:hover {
+    transform: scale(1.05);   /* zoom in 5% */
+    box-shadow: 
+        0 8px 20px rgba(0,0,0,0.4),   /* keep dark shadow */
+        0 0 15px rgba(0,255,26,0.8);  /* add glowing green */
+    border: 2px solid #00ff3c;
+}
+
 div{
     display:flex;
     justify-content:space-between;
 }
 input{
    background-color:#00ff3c;
-    height:30px;
-    width: 230px;
-   border-radius:10px;
-
+   height:30px;
+   width: 250px;
+   border-radius:4px;
 }
+/* 🔘 Style radio buttons */
+#gender-field {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#gender-field input[type="radio"] {
+  accent-color: #40ea40; /* modern browsers support */
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+#gender-field label {
+  margin-right: 10px;
+}
+
+/* ⬇️ Style dropdown */
+#branch {
+  height: 35px;
+  width: 260px;
+  padding: 5px 10px;
+  border: 2px solid #00ff3c;
+  border-radius: 6px;
+  background-color: #f9fff9;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#branch:hover {
+  border-color: #008f2d;
+  box-shadow: 0 0 6px rgba(0, 255, 60, 0.6);
+}
+
+#branch:focus {
+  outline: none;
+  border-color: #00ff3c;
+  box-shadow: 0 0 10px rgba(0, 255, 60, 0.8);
+}
+/* Style the dropdown options */
+#branch option {
+  background-color: #ffffff;  /* light background */
+  color: #ff0000;            /* dark text */
+  padding: 8px;
+  font-size: 15px;
+  border-radius: 1px;
+}
+
+/* Hover effect (works in most modern browsers) */
+#branch option:hover {
+  background-color: #2fff00; 
+  color: white;
+}
+
+/* Selected option styling */
+#branch option:checked {
+  background-color: #008f2d;
+  color: #ffffff;
+}
+
+
 
 #submit-field {
     margin-bottom: 15px;
@@ -53,6 +121,7 @@ input{
     padding: 10px;
     border-radius: 5px;
 } 
+
 button{
     height:40px;
     width:110px;
@@ -62,5 +131,11 @@ button{
 
     border-radius:10px;
     border:2px solid rgb(93, 106, 93);
-    box-shadow:1px 3px 6px rgb(51, 255, 109);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4); /* corrected shadow */
+    transition: box-shadow 0.3s ease;
+}
+button:hover {
+    box-shadow: 
+        0 6px 12px rgba(0,0,0,0.5),     /* stronger shadow */
+        0 0 10px rgba(51,255,109,0.7);  /* green glow */
 }
