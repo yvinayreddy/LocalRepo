@@ -1,0 +1,26 @@
+{
+  "name": "localrepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "application.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yvinayreddy/LocalRepo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yvinayreddy/LocalRepo/issues"
+  },
+  "homepage": "https://github.com/yvinayreddy/LocalRepo#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "mongodb": "^6.18.0",
+    "nodemon": "^3.1.10"
+  }
+}
